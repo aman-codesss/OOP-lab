@@ -75,47 +75,7 @@ int main()
 
         printf("%8d |%8.2f |\n", year_sum, year_sum / 12.0f);
 
-        // Print separator
-        for (int i = 0; i < 136; ++i)
-        {
-            putchar('-');
-        }
     }
 
-    // Display monthly sum
-    printf("\n|%5s |", "Sum");
-    int monthly_sum[12] = {0};
-    for (int i = 0; i < 12; ++i)
-    {
-        for (int j = 0; j < num_of_years; ++j)
-        {
-            monthly_sum[i] += expenditure[i][j];
-        }
-
-        printf("%7d |", monthly_sum[i]);
-    }
-
-    // Print separator
-    putchar('\n');
-    for (int i = 0; i < 116; ++i)
-    {
-        putchar('-');
-    }
-
-    // Display monthly average
-    printf("\n|%5s |", "Avg");
-    for (int i = 0; i < 12; ++i)
-    {
-        printf("%7.2f |", monthly_sum[i] / (float)num_of_years);
-    }
-
-    // Print separator
-    putchar('\n');
-    for (int i = 0; i < 116; ++i)
-    {
-        putchar('-');
-    }
-
-    getch();
-    return 0;
+   
 }
